@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="JesusUtrilla_Práctica5.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de juegos</title>
+</head>
+<body id="fondo">
+
+
+<div class="contenedor">
+        <h1>AIMZOMBIE</h1>
+  
+        <button onclick="mostrarInstrucciones()"><h2 class="opcion">¿C&oacute;mo se juega?</h2></button>
+
+        <select class="opcion" id="tiempo" name="tiempo">
+            <option value="1"><label>5s</label></option>
+            <option value="2"><label>10s</label></option>
+            <option value="3"><label>15s</label></option>
+        </select>
+
+        <!-- <button onclick="Empezarjuego(document.getElementById('tiempo').value)"><p class="opcion">JUGAR</p></button> -->
+        <button onclick="iniciarCuentaRegresiva()"><p class="opcion">JUGAR</p></button>
+
+
+        <div id="instrucciones">
+            <div id="instrucciones-contenedor">
+                <p>Dispara a todos los zombies que aparezcan en la pantalla,
+                    estos desaparecer&aacute;n despu&eacute;s de un breve periodo 
+                    tiempo si no los disparas,
+                    ¡as&iacute; que se rápido!</p>
+                <button id="instruccionesVolver" onclick="ocultarInstrucciones()" class="opcion">Volver</button>
+            </div>
+        </div>
+</div>
+
+
+<div id="pantallafinal">
+    <button id="pantallafinalvolver" onclick="ocultarInstrucciones()" class="opcion">Volver</button>
+</div>
+
+<div id="target"></div>
+
+
+<img id="imagenClick" src="fueguito.webp" alt="Imagen de clic" style="position: absolute; display: none; width: 80px; height:60px;">
+
+
+
+
+<script src="JesusUtrilla_Práctica5.js"></script>
+    
+</body>
+</html>

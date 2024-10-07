@@ -1,0 +1,165 @@
+
+
+body
+{
+    background: url(fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    /* background: linear-gradient(to right,  rgb(117, 115, 111), rgb(252, 252, 252) , rgb(117, 115, 111)); */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
+}
+
+body, button
+{
+    cursor: url('cursor.png') 25 25, auto;
+}
+
+.contenedor
+{
+    border: solid 5px rgb(66, 55, 55);
+    border-radius: 12%;
+    display: grid;
+    grid-template-rows: repeat(4 ,1fr);
+    gap: 1em;
+    width: 40em;
+    height: 30em;
+    justify-content: center;
+    padding: 1em;
+    
+}
+
+#pantallafinal
+{
+    border: solid 5px rgb(66, 55, 55);
+    border-radius: 12%;
+    display: none;
+    grid-template-rows: repeat(2 ,1fr);
+    gap: 1em;
+    width: 40em;
+    height: 30em;
+    justify-content: center;
+    padding: 1em;
+
+ 
+    
+    
+}
+
+/* #pantallafinalvolver
+{
+    grid-row: 2/3;
+} */
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Usa una fuente de estilo retro de videojuego */
+    color:  rgba(234, 224, 81, 0.735); 
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Sombra para resaltar el texto */
+    margin-bottom: 0.5em; /* Ajuste opcional del margen inferior */
+}
+
+p
+{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Usa una fuente de estilo retro de videojuego */
+    color:  rgba(98, 97, 91, 0.735);
+    margin-top: 1.5em;
+}
+
+select 
+{
+    width: 100%;
+    cursor: url('cursor.png'), auto;
+    
+}
+
+select option 
+{
+    font-size: 25px;
+    text-align: center;
+    cursor: url('cursor.png'), auto;
+ 
+}
+
+label
+{
+    padding: 2em;
+}
+
+.opcion
+{
+   
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive; /* Usa una fuente de estilo retro de videojuego */
+    color: rgb(131, 111, 111); 
+}
+
+.oculto {
+    display: none;
+}
+
+
+
+select:hover, button:hover
+{
+    background-color: rgba(234, 224, 81, 0.735);
+    box-shadow: 0px 0px 20px goldenrod;
+}
+
+
+#instrucciones 
+{
+    display: none;
+    text-align: center;
+
+
+    
+}
+
+#instrucciones-contenedor 
+{
+    margin-top: 0.3em;
+}
+
+#instrucciones button 
+{
+    cursor: url('cursor.png') 25 25, auto;
+    margin: 0 auto;
+    display: block;
+}
+
+
+#target
+{
+    position: absolute;
+    background: url(zombi.png);
+    background-clip: border-box;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    display: none;
+    left: 0%;
+    top: 0%;
+}
+
+.pantallafinal p
+{
+    display: block;
+}
+
+#cuentaRegresiva
+{
+    font-size: 5em;
+    font-family: 'Press Start 2P', cursive; /* Usa una fuente de estilo retro de videojuego */
+    color: rgb(131, 111, 111); 
+}
+
+
+
+
